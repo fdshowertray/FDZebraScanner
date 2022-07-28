@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/escaneoPrincipal">
+
+    <fragment
+        android:id="@+id/escaneoPrincipal"
+        android:name="com.fdshowertray.fdzebrascanner.EscaneoPrincipal"
+        android:label="fragmento_escaneo_principal"
+        tools:layout="@layout/fragmento_escaneo_principal" >
+        <action
+            android:id="@+id/action_escaneoPrincipal_to_empaquetadoFragment"
+            app:destination="@id/empaquetadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/empaquetadoFragment"
+        android:name="com.fdshowertray.fdzebrascanner.EmpaquetadoFragment"
+        android:label="fragment_empaquetado"
+        tools:layout="@layout/fragment_empaquetado" />
+</navigation>

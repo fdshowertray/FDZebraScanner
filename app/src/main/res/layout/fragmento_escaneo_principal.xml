@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="inherit"
+    android:orientation="vertical"
+    tools:context=".EscaneoPrincipal">
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/escaneo_principal_titulo"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_first"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="10px"
+        android:layout_marginRight="50px"
+        android:text="@string/empaquetado" />
+</LinearLayout>
